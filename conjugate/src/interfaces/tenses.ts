@@ -1,0 +1,1 @@
+export type Tenses = 'present' | 'past' | 'future' | 'conditional'

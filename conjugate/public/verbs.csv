@@ -1,0 +1,10 @@
+norsk,english,tense,stem,ending,regular,category
+spiser,eating,present,spis,er,true,2
+spiste,ate,past,spis,te,true,2
+spise,eat,future,spis,e,true,2
+spise,eat,conditional,spis,e,true,2
+bo,live,infinitive,bo,,true,3
+bor,living,present,bo,r,true,3
+spise,eat,infinitive,spis,e,true,2
+gjøre,do,infinitive,gjør,e,true,2
+gjør,doing,present,gjør,,false,2
