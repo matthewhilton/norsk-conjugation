@@ -1,1 +1,1 @@
-export type Tenses = 'present' | 'past' | 'future' | 'conditional'
+export type Tenses = 'infinitive' | 'present' | 'past' | 'future' | 'present_perfect'

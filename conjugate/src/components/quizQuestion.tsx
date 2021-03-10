@@ -16,14 +16,14 @@ type Inputs = {
 export const QuizQuestion = ({question, onSuccess=function(){}}: Props) => {
     const [stage, setStage] = useState<number>(0)
 
-    const { register, handleSubmit, watch, errors } = useForm<Inputs>();
+    const { register, handleSubmit, reset } = useForm<Inputs>();
 
     const onSubmit = (data: Inputs) => {
         switch(stage){
-            case 0:
+            case 1:
                 if(data.tense === question.sentence.tense) setStage(stage + 1)
             break;
-            case 1:
+            case 0:
                 if(parseInt(data.category) === question.verb.category) setStage(stage + 1)
             break;
             case 2:
@@ -31,6 +31,11 @@ export const QuizQuestion = ({question, onSuccess=function(){}}: Props) => {
             break;
         }
     }
+
+    useEffect(() => {
+        setStage(0)
+        reset()
+    }, [question])
 
     useEffect(() => {
         if(stage === 3){
@@ -51,15 +56,9 @@ export const QuizQuestion = ({question, onSuccess=function(){}}: Props) => {
 
                 {stage >= 0 && <p> Verb stem: {question.verb.stem} </p>}
 
-                
-                <input name="tense" ref={register} type="text" placeholder="tense" disabled={stage !== 0} />
-                {stage >= 1 && <p> Tense: {question.sentence.tense} </p>}
-
-                <input name="category" ref={register} type="number" placeholder="category" disabled={stage !== 1} />
-                {stage >= 2 && <p> Category: {question.verb.category} </p>}
-
-                <input name="conjugation" ref={register} type="text" placeholder="conjugation" disabled={stage !== 2} />
-                {stage >= 3 && <p> Conjugation: {question.verb.norsk} </p>}
+                <input name="category" ref={register} type="number" placeholder="category" disabled={stage !== 0} style={stage >= 1 ? {backgroundColor: "lightgreen"} : undefined} />
+                <input name="tense" ref={register} type="text" placeholder="tense" disabled={stage !== 1} style={stage >= 2 ? {backgroundColor: "lightgreen"} : undefined} />
+                <input name="conjugation" ref={register} type="text" placeholder="conjugation" disabled={stage !== 2} style={stage >= 3 ? {backgroundColor: "lightgreen"} : undefined}/>
                 {stage >= 3 && !question.verb.regular && <p> <u> Irregular! </u> </p>}
 
                 <input type="submit" value="Submit" disabled={stage === 3}/>
