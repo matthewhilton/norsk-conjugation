@@ -81,13 +81,24 @@ def get_sentence_verbs(sentence: str):
             verbs.append(part)
     return verbs
 
-sentences = sent_tokenize(sample_formatted)
+def get_data():
+    sentences = sent_tokenize(sample_formatted)
 
+    sentences_data = []
 
-s = sentences[3]
-translated_sentence = translate(s, "nb")
-sentence_verbs = get_sentence_verbs(s)
+    for sentence in sentences:
+        sentence_translated = translate(sentence, "nb")
+        sentence_verbs_pos = get_sentence_verbs(sentence)
 
-verb_translations = 
-for verb in sentence_verbs:
-    translated_verb = 
+        verb_translations = {}
+        for verb in sentence_verbs_pos:
+            verb_translated = translate(verb[0], "nb")
+            verb_translations[verb[0]] = verb_translated
+        
+        sentences_data.append({
+            'sentence_eng': sentence,
+            'sentence_no': sentence_translated,
+            'verbs_eng_pos': sentence_verbs_pos,
+            'verb_trans_no': verb_translations
+        })
+    return sentences_data
