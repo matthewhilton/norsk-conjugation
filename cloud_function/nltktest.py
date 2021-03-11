@@ -11,40 +11,6 @@ download_dir = os.path.join(root, 'nltk_data')
 os.chdir(download_dir)
 nltk_data.path.append(download_dir)
 
-sample = '''
-Once upon a time there were four little Rabbits, and their names
-were--
-
-          Flopsy,
-       Mopsy,
-   Cotton-tail,
-and Peter.
-
-They lived with their Mother in a sand-bank, underneath the root of a
-very big fir-tree.
-
-'Now my dears,' said old Mrs. Rabbit one morning, 'you may go into
-the fields or down the lane, but don't go into Mr. McGregor's garden:
-your Father had an accident there; he was put in a pie by Mrs.
-McGregor.'
-
-[Illustration]
-
-[Illustration]
-
-'Now run along, and don't get into mischief. I am going out.'
-
-Then old Mrs. Rabbit took a basket and her umbrella, and went through
-the wood to the baker's. She bought a loaf of brown bread and five
-currant buns.
-'''
-
-# Format the sample
-combine_whitespace = re.compile(r"\s+")
-
-sample_formatted = sample.replace('[Illustration]', '').replace('\n', ' ').replace('Mr.', 'Mr ').replace('Mrs. ', 'Mrs ')
-sample_formatted = combine_whitespace.sub(" ", sample_formatted).strip()
-
 tag_dict = {
     'VB': 'Verb Base',
     'VBD': 'Past Tense',
@@ -53,7 +19,6 @@ tag_dict = {
     'VBP': 'Singular Present',
     'VBZ': '3rd Person Singular Present'
 }
-
 
 def translate(sentence: str, to_language: str):
     base_url = 'https://api.cognitive.microsofttranslator.com'
@@ -88,7 +53,12 @@ def get_sentence_verbs(sentence: str):
             verbs.append(part)
     return verbs
 
-def get_data():
+def get_data(textToExamine: str):
+    # Preprocess the text
+    combine_whitespace = re.compile(r"\s+")
+    sample_formatted = textToExamine.replace('[Illustration]', '').replace('\n', ' ').replace('Mr.', 'Mr ').replace('Mrs. ', 'Mrs ')
+    sample_formatted = combine_whitespace.sub(" ", sample_formatted).strip()
+
     sentences = sent_tokenize(sample_formatted)
 
     sentences_data = []
