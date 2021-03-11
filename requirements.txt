@@ -1,0 +1,6 @@
+nltk
+re
+uuid
+requests
+json
+os

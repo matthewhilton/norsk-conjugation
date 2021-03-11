@@ -1,4 +1,4 @@
-from nltktest.py import get_data
+from nltktest import get_data
 
 def run_func(request):
     # Do something with the request maybe?
