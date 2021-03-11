@@ -1,10 +1,348 @@
-norsk,english,tense,stem,ending,regular,category
-spiser,eating,present,spis,er,true,2
-spiste,ate,past,spis,te,true,2
-spise,eat,future,spis,e,true,2
-spise,eat,conditional,spis,e,true,2
-bo,live,infinitive,bo,,true,3
-bor,living,present,bo,r,true,3
-spise,eat,infinitive,spis,e,true,2
-gjøre,do,infinitive,gjør,e,true,2
-gjør,doing,present,gjør,,false,2
+norsk,english,tense,stem,regular,ending
+arbeidet,work,present_perfect,arbeid,True,et
+arbeidet,work,past,arbeid,True,et
+arbeider,work,present,arbeid,True,er
+arbeide,work,infinitive,arbeid,True,e
+begynt,begin,present_perfect,begynn,True,t
+begynte,begin,past,begynn,True,te
+begynner,begin,present,begynn,True,er
+begynne,begin,infinitive,begynn,True,e
+bestemt,decide,present_perfect,bestemm,True,t
+bestemte,decide,past,bestemm,True,te
+bestemmer,decide,present,bestemm,True,er
+bestemme,decide,infinitive,bestemm,True,e
+besøkt,visit,present_perfect,besøk,True,t
+besøkte,visit,past,besøk,True,te
+besøker,visit,present,besøk,True,er
+besøke,visit,infinitive,besøk,True,e
+betalt,pay,present_perfect,betal,True,t
+betalte,pay,past,betal,True,te
+betaler,pay,present,betal,True,er
+betale,pay,infinitive,betal,True,e
+blitt,"remain, become",present_perfect,bli,True,tt
+blir,"remain, become",present,bli,True,r
+bli,"remain, become",infinitive,bli,True,
+bodd,dwell,present_perfect,bo,True,dd
+bodde,dwell,past,bo,True,dde
+bor,dwell,present,bo,True,r
+bo,dwell,infinitive,bo,True,
+brakt,bring,present_perfect,bring,True,akt
+brakte,bring,past,bring,True,akte
+bringer,bring,present,bring,True,er
+bringe,bring,infinitive,bring,True,e
+brukt,use,present_perfect,bruk,True,t
+brukte,use,past,bruk,True,te
+bruker,use,present,bruk,True,er
+bruke,use,infinitive,bruk,True,e
+burdet,should,present_perfect,burd,True,et
+burde,should,past,burd,True,e
+bør,should,present,burd,False,ør
+burde,should,infinitive,burd,True,e
+båret,"bear, carry",present_perfect,bær,True,�et
+bar,"bear, carry",past,bær,True,ar
+bærer,"bear, carry",present,bær,True,er
+bære,"bear, carry",infinitive,bær,True,e
+delt,"divide, share",present_perfect,del,True,t
+delte,"divide, share",past,del,True,te
+deler,"divide, share",present,del,True,er
+dele,"divide, share",infinitive,del,True,e
+drog,"drag, travel",past,dra / drag,True,og
+drept,kill,present_perfect,drep,True,t
+drepte,kill,past,drep,True,te
+dreper,kill,present,drep,True,er
+drepe,kill,infinitive,drep,True,e
+drukket,drink,present_perfect,drikk,True,uet
+drakk,drink,past,drikk,True,a
+drikker,drink,present,drikk,True,er
+drikke,drink,infinitive,drikk,True,e
+drevet,"operate, run",present_perfect,driv,True,eet
+driver,"operate, run",present,driv,True,er
+drive,"operate, run",infinitive,driv,True,e
+dødd,die,present_perfect,dø,True,dd
+dør,die,present,dø,True,r
+dø,die,infinitive,dø,True,
+eier,own,present,ei,True,er
+eie,own,infinitive,ei,True,e
+falt,fall,present_perfect,fall,True,t
+falt,fall,past,fall,True,t
+faller,fall,present,fall,True,er
+falle,fall,infinitive,fall,True,e
+fantes,"be found, exist",present_perfect,finnes,True,at
+fantes,"be found, exist",past,finnes,True,at
+finnes,"be found, exist",present,finnes,False,
+finnes,"be found, exist",infinitive,finnes,True,
+funnet,find,present_perfect,finn,True,uet
+fant,find,past,finn,True,at
+finner,find,present,finn,True,er
+finne,find,infinitive,finn,True,e
+foretrukket,prefer,present_perfect,foretrekk,True,uet
+foretrakk,prefer,past,foretrekk,True,a
+foretrekker,prefer,present,foretrekk,True,er
+foretrekke,prefer,infinitive,foretrekk,True,e
+forklart,explain,present_perfect,forklar,True,t
+forklarte,explain,past,forklar,True,te
+forklarer,explain,present,forklar,True,er
+forklare,explain,infinitive,forklar,True,e
+forstått,understand,present_perfect,forstå,True,tt
+forstod,understand,past,forstå,True,od
+forstår,understand,present,forstå,True,r
+forstå,understand,infinitive,forstå,True,
+fortalt,"tell, explain",present_perfect,fortell,True,at
+fortalte,"tell, explain",past,fortell,True,ate
+forteller,"tell, explain",present,fortell,True,er
+fortelle,"tell, explain",infinitive,fortell,True,e
+fått,"get, receive",present_perfect,få,True,tt
+fikk,"get, receive",past,få,True,ikk
+får,"get, receive",present,få,True,r
+få,"get, receive",infinitive,få,True,
+gitt,give,present_perfect,gi,True,tt
+gav,give,past,gi,True,av
+gir,give,present,gi,True,r
+gi,give,infinitive,gi,True,
+gjeldt,"be in force, apply",present_perfect,gjeld,True,t
+gjelder,"be in force, apply",present,gjeld,True,er
+gjelde,"be in force, apply",infinitive,gjeld,True,e
+gjort,do,present_perfect,gjør,True,ort
+gjorde,do,past,gjør,True,orde
+gjør,do,present,gjør,False,
+gjøre,do,infinitive,gjør,True,e
+glemt,forget,present_perfect,glemm,True,t
+glemte,forget,past,glemm,True,te
+glemmer,forget,present,glemm,True,er
+glemme,forget,infinitive,glemm,True,e
+gått,"go, walk",present_perfect,gå,True,tt
+gikk,"go, walk",past,gå,True,ikk
+går,"go, walk",present,gå,True,r
+gå,"go, walk",infinitive,gå,True,
+hatt,have,present_perfect,ha,True,tt
+hadde,have,past,ha,True,dde
+har,have,present,ha,True,r
+ha,have,infinitive,ha,True,
+handlet,"act, shop, deal with",present_perfect,handl,True,et
+handlet,"act, shop, deal with",past,handl,True,et
+handler,"act, shop, deal with",present,handl,True,er
+handle,"act, shop, deal with",infinitive,handl,True,e
+hendt,happen,present_perfect,hend,True,t
+hendte,happen,past,hend,True,te
+hender,happen,present,hend,True,er
+hende,happen,infinitive,hend,True,e
+hendt,"fetch, bring",present_perfect,hent,True,dt
+hentet,"fetch, bring",past,hent,True,et
+henter,"fetch, bring",present,hent,True,er
+hente,"fetch, bring",infinitive,hent,True,e
+hett,be named,present_perfect,het,True,t
+heter,be named,present,het,True,er
+hete,be named,infinitive,het,True,e
+hjulpet,help,present_perfect,hjelp,True,uet
+hjalp,help,past,hjelp,True,a
+hjelper,help,present,hjelp,True,er
+hjelpe,help,infinitive,hjelp,True,e
+holdt,"keep, hold",present_perfect,hold,True,t
+holdt,"keep, hold",past,hold,True,t
+holder,"keep, hold",present,hold,True,er
+holde,"keep, hold",infinitive,hold,True,e
+husket,remember,present_perfect,husk,True,et
+husket,remember,past,husk,True,et
+husker,remember,present,husk,True,er
+huske,remember,infinitive,husk,True,e
+hørt,hear,present_perfect,hør,True,t
+hørte,hear,past,hør,True,te
+hører,hear,present,hør,True,er
+høre,hear,infinitive,hør,True,e
+interessert,interest,present_perfect,interesser,True,t
+interesserte,interest,past,interesser,True,te
+interesserer,interest,present,interesser,True,er
+interessere,interest,infinitive,interesser,True,e
+jobbet,work,present_perfect,jobb,True,et
+jobbet,work,past,jobb,True,et
+jobber,work,present,jobb,True,er
+jobbe,work,infinitive,jobb,True,e
+kjent,"know (person, place)",present_perfect,kjenn,True,t
+kjente,"know (person, place)",past,kjenn,True,te
+kjenner,"know (person, place)",present,kjenn,True,er
+kjenne,"know (person, place)",infinitive,kjenn,True,e
+kjøpt,purchase,present_perfect,kjøp,True,t
+kjøpte,purchase,past,kjøp,True,te
+kjøper,purchase,present,kjøp,True,er
+kjøpe,purchase,infinitive,kjøp,True,e
+kjørt,drive,present_perfect,kjør,True,t
+kjørte,drive,past,kjør,True,te
+kjører,drive,present,kjør,True,er
+kjøre,drive,infinitive,kjør,True,e
+kommet,come,present_perfect,komm,True,et
+kom,come,past,komm,True,
+kommer,come,present,komm,True,er
+komme,come,infinitive,komm,True,e
+kostet,"cost, sweep",present_perfect,kost,True,et
+koster,"cost, sweep",present,kost,True,er
+koste,"cost, sweep",infinitive,kost,True,e
+kunnet,be able to,present_perfect,kunn,True,et
+kunne,be able to,past,kunn,True,e
+kan,be able to,present,kunn,True,a
+kunne,be able to,infinitive,kunn,True,e
+latt,"allow, let",present_perfect,la,True,tt
+lot,"allow, let",past,la,True,ot
+lar,"allow, let",present,la,True,r
+la,"allow, let",infinitive,la,True,
+lager,"make, create",present,lag,True,er
+lage,"make, create",infinitive,lag,True,e
+lagt,"lay, place",present_perfect,legg,True,at
+la,"lay, place",past,legg,True,a
+legge,"lay, place",present,legg,True,e
+legge,"lay, place",infinitive,legg,True,e
+lest,"read, study",present_perfect,les,True,t
+leste,"read, study",past,les,True,te
+leser,"read, study",present,les,True,er
+lese,"read, study",infinitive,les,True,e
+levd,"live, be alive",present_perfect,lev,True,d
+levde,"live, be alive",past,lev,True,de
+lever,"live, be alive",present,lev,True,er
+leve,"live, be alive",infinitive,lev,True,e
+ligget,lie,present_perfect,ligg,True,et
+lå,lie,past,ligg,True,å
+ligger,lie,present,ligg,True,er
+ligge,lie,infinitive,ligg,True,e
+likt,like,present_perfect,lik,True,t
+likte,like,past,lik,True,te
+liker,like,present,lik,True,er
+like,like,infinitive,lik,True,e
+lært,"learn, teach",present_perfect,lær,True,t
+lærte,"learn, teach",past,lær,True,te
+lærer,"learn, teach",present,lær,True,er
+lære,"learn, teach",infinitive,lær,True,e
+løp,run,past,løp,True,
+løper,run,present,løp,True,er
+løpe,run,infinitive,løp,True,e
+meldt,"announce, report",present_perfect,meld,True,t
+meldte,"announce, report",past,meld,True,te
+melder,"announce, report",present,meld,True,er
+melde,"announce, report",infinitive,meld,True,e
+ment,"think, be of the opinion",present_perfect,men,True,t
+mente,"think, be of the opinion",past,men,True,te
+mener,"think, be of the opinion",present,men,True,er
+mene,"think, be of the opinion",infinitive,men,True,e
+møtt,meet,present_perfect,møt,True,t
+møtte,meet,past,møt,True,te
+møter,meet,present,møt,True,er
+møte,meet,infinitive,møt,True,e
+måttet,"have to, be obliged to",present_perfect,mått,True,et
+måtte,"have to, be obliged to",past,mått,True,e
+må,"have to, be obliged to",present,mått,False,
+måtte,"have to, be obliged to",infinitive,mått,True,e
+prøvd,"try, attempt",present_perfect,prøv,True,d
+prøvde,"try, attempt",past,prøv,True,de
+prøver,"try, attempt",present,prøv,True,er
+prøve,"try, attempt",infinitive,prøv,True,e
+reist,"travel, raise",present_perfect,reis,True,t
+reiste,"travel, raise",past,reis,True,te
+reiser,"travel, raise",present,reis,True,er
+reise,"travel, raise",infinitive,reis,True,e
+sett,see,present_perfect,s,True,ett
+så,see,past,s,True,å
+ser,see,present,s,True,er
+se,see,infinitive,s,True,e
+solgt,sell,present_perfect,selg,True,ot
+solgte,sell,past,selg,True,ote
+selger,sell,present,selg,True,er
+selge,sell,infinitive,selg,True,e
+sendt,send,present_perfect,send,True,t
+sendte,send,past,send,True,te
+sender,send,present,send,True,er
+sende,send,infinitive,send,True,e
+satt,"set, place",present_perfect,sett,True,a
+satte,"set, place",past,sett,True,ae
+setter,"set, place",present,sett,True,er
+sette,"set, place",infinitive,sett,True,e
+sagt,"say, tell",present_perfect,si,True,agt
+sa,"say, tell",past,si,True,a
+*sier,"say, tell",present,si,False,*sier
+si,"say, tell",infinitive,si,True,
+sittet,sit,present_perfect,sitt,True,et
+satt,sit,past,sitt,True,a
+sitter,sit,present,sitt,True,er
+sitte,sit,infinitive,sitt,True,e
+skjedd,happen,present_perfect,skj,True,edd
+skjedde,happen,past,skj,True,edde
+skjer,happen,present,skj,True,er
+skje,happen,infinitive,skj,True,e
+skrevet,write,present_perfect,skriv,True,eet
+skrev,write,past,skriv,True,e
+skriver,write,present,skriv,True,er
+skrive,write,infinitive,skriv,True,e
+skullet,"should, shall",present_perfect,skull,True,et
+skulle,"should, shall",past,skull,True,e
+skal,"should, shall",present,skull,False,a
+skulle,"should, shall",infinitive,skull,True,e
+slått,"hit, strike",present_perfect,slå,True,tt
+slo,"hit, strike",past,slå,True,o
+slår,"hit, strike",present,slå,True,r
+slå,"hit, strike",infinitive,slå,True,
+slåss,fight,present_perfect,slåss,True,
+sloss,fight,past,slåss,True,os
+slåss,fight,present,slåss,False,
+slåss,fight,infinitive,slåss,True,
+sovet,sleep,present_perfect,sov,True,et
+sov,sleep,past,sov,True,
+sover,sleep,present,sov,True,er
+sove,sleep,infinitive,sov,True,e
+spurt,ask,present_perfect,spørr,True,urt
+spurte,ask,past,spørr,True,urte
+spør,ask,present,spørr,False,
+spørre,ask,infinitive,spørr,True,e
+stått,"stand, stand up",present_perfect,stå,True,tt
+stod,"stand, stand up",past,stå,True,od
+står,"stand, stand up",present,stå,True,r
+stå,"stand, stand up",infinitive,stå,True,
+syntes,"seem, think, be visible",past,synes,True,tes
+synes,"seem, think, be visible",infinitive,synes,True,
+søkt,seek,present_perfect,søk,True,t
+søkte,seek,past,søk,True,te
+søker,seek,present,søk,True,er
+søke,seek,infinitive,søk,True,e
+tatt,take,present_perfect,ta,True,tt
+tok,take,past,ta,True,ok
+tar,take,present,ta,True,r
+ta,take,infinitive,ta,True,
+tenkt,"think, intend",present_perfect,tenk,True,t
+tenkte,"think, intend",past,tenk,True,te
+tenker,"think, intend",present,tenk,True,er
+tenke,"think, intend",infinitive,tenk,True,e
+truffet,"meet, hit",present_perfect,treff,True,uet
+traff,"meet, hit",past,treff,True,a
+treffer,"meet, hit",present,treff,True,er
+treffe,"meet, hit",infinitive,treff,True,e
+trivdes,"enjoy, thrive",past,trives,True,des
+trives,"enjoy, thrive",present,trives,True,
+trives,"enjoy, thrive",infinitive,trives,True,
+trodd,believe,present_perfect,tro,True,dd
+trodde,believe,past,tro,True,dde
+tror,believe,present,tro,True,r
+tro,believe,infinitive,tro,True,
+ventet,"wait, expect",present_perfect,vent,True,et
+ventet,"wait, expect",past,vent,True,et
+venter,"wait, expect",present,vent,True,er
+vente,"wait, expect",infinitive,vent,True,e
+villet,"want to, will",present_perfect,vill,True,et
+ville,"want to, will",past,vill,True,e
+vil,"want to, will",present,vill,False,
+ville,"want to, will",infinitive,vill,True,e
+vist,show,present_perfect,vis,True,t
+viste,show,past,vis,True,te
+viser,show,present,vis,True,er
+vise,show,infinitive,vis,True,e
+visst,know (fact),present_perfect,vit,True,sst
+visste,know (fact),past,vit,True,sste
+vet,know (fact),present,vit,False,e
+vite,know (fact),infinitive,vit,True,e
+vært,"be, exist",present_perfect,vær,True,t
+var,"be, exist",past,vær,True,ar
+er,"be, exist",present,vær,False,er
+være,"be, exist",infinitive,vær,True,e
+ønsket,"wish, desire",present_perfect,ønsk,True,et
+ønsket,"wish, desire",past,ønsk,True,et
+ønsker,"wish, desire",present,ønsk,True,er
+ønske,"wish, desire",infinitive,ønsk,True,e
+åpnet,open,present_perfect,åpn,True,et
+åpnet,open,past,åpn,True,et
+åpner,open,present,åpn,True,er
+åpne,open,infinitive,åpn,True,e

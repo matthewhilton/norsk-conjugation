@@ -1,6 +1,8 @@
 norsk,english,tense
 å %, to %,infinitive
-Jeg %,I am %,present
+Jeg %,I %,present
 Jeg %,I %,past
 Jeg vil %,I want to %,future
 Jeg ville %,I wanted to %,conditional
+Hun pleier å % klokka fem,She tends to % at 5 o'clock,infinitive
+Han % kaffe, He % coffee, present

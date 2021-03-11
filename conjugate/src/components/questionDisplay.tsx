@@ -12,8 +12,6 @@ export const QuestionDisplay = ({question}: Props) => {
             <p>{question.sentence.norsk.replace('%', question.verb.norsk)}</p>
             
             <p>Stem: {question.verb.stem} {!question.verb.ending.includes('-') && question.verb.ending != '' ? '+' : null} {question.verb.ending} </p>
-
-            <p>Category {question.verb.category}</p>
             {!question.verb.regular ? <u> Irregular </u> : null}
         </div>
     )

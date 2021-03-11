@@ -53,13 +53,20 @@ const Quiz = () => {
 
     const onQuestionCorrect = () => {
         // Choose a new question randomly
-        //chooseRandomQuestion()
+        chooseRandomQuestion()
     }
     
 
     return(
         <div style={{margin: '30px'}}>
             <h1> Norsk Verb Study Helper </h1>
+
+            <h2> Questions </h2>
+            <button onClick={chooseRandomQuestion}> Choose random question </button>
+
+            <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+                {currentQuestion != undefined && <QuizQuestion question={currentQuestion} onSuccess={onQuestionCorrect} />}
+            </div>
 
             <h2> Verb Rules: </h2>
 
@@ -88,12 +95,7 @@ const Quiz = () => {
             <h3> Conditional </h3>
             <p> Describes a future event, but from a point in the past. (e.g. She was going to go to the movies). The verb skulle (should) or ville (would) is used and ha (have) is often omitted. This is combined with either the present or the past tense depending on the location in the sentence.</p>
 
-            <h2> Questions </h2>
-            <button onClick={chooseRandomQuestion}> Choose random question </button>
-
-            <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
-                {currentQuestion != undefined && <QuizQuestion question={currentQuestion} onSuccess={onQuestionCorrect} />}
-            </div>
+           
         </div>
     )
 }

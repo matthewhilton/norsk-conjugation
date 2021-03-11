@@ -7,5 +7,4 @@ export default interface Verb {
     stem: string;
     ending: string;
     regular: boolean;
-    category: 1 | 2 | 3 | 4;
 }
