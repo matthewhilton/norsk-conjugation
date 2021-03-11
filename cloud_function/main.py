@@ -1,7 +1,10 @@
 from nltktest import get_data
+import json
 
 def main(request):
     # Do something with the request maybe?
-    return(get_data())
+    return_data = {
+        'data': get_data()
+    }
 
-print(main(None))
+    return(json.dumps(return_data))
