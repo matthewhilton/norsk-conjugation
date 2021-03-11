@@ -1,8 +1,15 @@
-from nltk import word_tokenize, pos_tag, sent_tokenize
+from nltk import word_tokenize, pos_tag, sent_tokenize, data as nltk_data
 import re
 import uuid
 import requests
 import json
+import os
+
+# Load NLTK data manually
+root = os.path.dirname(os.path.abspath(__file__))
+download_dir = os.path.join(root, 'nltk_data')
+os.chdir(download_dir)
+nltk_data.path.append(download_dir)
 
 sample = '''
 Once upon a time there were four little Rabbits, and their names
